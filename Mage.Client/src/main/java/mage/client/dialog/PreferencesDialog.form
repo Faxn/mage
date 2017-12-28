@@ -15,7 +15,7 @@
     <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
     <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
     <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
-    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="2"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
     <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
     <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
     <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
@@ -159,7 +159,7 @@
                     <Property name="toolTipText" type="java.lang.String" value="Write the card&apos;s name on the card to make the card name more recognizable."/>
                     <Property name="actionCommand" type="java.lang.String" value=""/>
                     <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-                      <Color id="Standardcursor"/>
+                      <Color id="Default Cursor"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -189,16 +189,11 @@
                   <Properties>
                     <Property name="selected" type="boolean" value="true"/>
                     <Property name="toolTipText" type="java.lang.String" value="Show the path Xmage is expecting for this card&apos;s image (only displays if missing)"/>
-                    <Property name="actionCommand" type="java.lang.String" value=""/>
                     <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                       <Color id="Default Cursor"/>
                     </Property>
                     <Property name="label" type="java.lang.String" value="Display image path for missing images"/>
                   </Properties>
-                  <AccessibilityProperties>
-                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="Display image path for missing images"/>
-                    <Property name="AccessibleContext.accessibleDescription" type="java.lang.String" value="Show the path Xmage is expecting for this card&apos;s image (only displays if missing)"/>
-                  </AccessibilityProperties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="showFullImagePathActionPerformed"/>
                   </Events>
@@ -3977,7 +3972,7 @@
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="phases_stopSettings" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="170" max="32767" attributes="0"/>
+                      <EmptySpace pref="174" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -4198,7 +4193,7 @@
                       <Component id="panelCardImages" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="panelBackgroundImages" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="125" max="32767" attributes="0"/>
+                      <EmptySpace pref="147" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -4257,7 +4252,7 @@
                                       </Group>
                                       <Component id="cbUseDefaultImageFolder" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace min="0" pref="270" max="32767" attributes="0"/>
+                                  <EmptySpace min="0" pref="338" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
@@ -5639,7 +5634,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="connection_servers" max="-2" attributes="0"/>
+                      <Component id="connection_servers" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="lblProxyType" min="-2" max="-2" attributes="0"/>
@@ -5647,7 +5642,7 @@
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="pnlProxySettings" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace pref="267" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -5681,6 +5676,10 @@
                                   <EmptySpace min="-2" pref="141" max="-2" attributes="0"/>
                                   <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
                               </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="cbAutoConnect" min="-2" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
                           <EmptySpace pref="198" max="32767" attributes="0"/>
                       </Group>
@@ -5695,6 +5694,9 @@
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="5" max="32767" attributes="0"/>
+                          <Component id="cbAutoConnect" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -5726,6 +5728,11 @@
                       <Font name="Tahoma" size="10" style="2"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="e.g.: http://XMage.de/files/server-list.txt"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="cbAutoConnect">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Automatically connect to last used server."/>
                   </Properties>
                 </Component>
               </SubComponents>
@@ -5947,7 +5954,7 @@
                                   <Component id="keyToggleRecordMacro" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="controlsDescriptionLabel" pref="441" max="32767" attributes="0"/>
+                              <Component id="controlsDescriptionLabel" pref="502" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
